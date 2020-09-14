@@ -1,5 +1,6 @@
 import React from 'react';
 import { ImageBackground, StyleSheet, Text, View } from 'react-native';
+import SingerPopularSongList from './popular/song/list';
 
 const singerImage = require('./singerImage.png')
 
@@ -12,14 +13,14 @@ const Singer = () => {
                 borderBottomRightRadius={50}>
                 <Text style={styles.name}>NLE Choppa</Text>
             </ImageBackground>
-            
+            <SingerPopularSongList/>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
     singer: {
-        flex: 1,
+        
     },
     name: {
         fontSize: 24,
