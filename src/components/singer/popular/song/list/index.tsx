@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import SingerPopularSongListHeader from './header';
+import SingerPopularSongListItems from './items';
 
 const SingerPopularSongList = () => {
     return(
         <View style={styles.singerPopularSongList}>
             <SingerPopularSongListHeader/>
+            <SingerPopularSongListItems/>
         </View>
     )
 }
