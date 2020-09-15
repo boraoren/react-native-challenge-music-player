@@ -5,7 +5,7 @@ import Singer from '../components/singer';
 
 const Screen1 = () => {
     return(
-        <SafeAreaView>
+        <SafeAreaView style={styles.screen1}>
             <ScreenHeader/>
             <Singer/>
         </SafeAreaView>
@@ -13,8 +13,8 @@ const Screen1 = () => {
 }
 
 const styles = StyleSheet.create({
-    text: {
-        color: '#000'
+    screen1: {
+        flex: 1,
     }
 })
 

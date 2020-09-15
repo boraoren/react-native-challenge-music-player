@@ -20,7 +20,7 @@ const Singer = () => {
 
 const styles = StyleSheet.create({
     singer: {
-        
+        flex: 1,
     },
     name: {
         fontSize: 24,
