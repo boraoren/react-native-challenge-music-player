@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import ButtonMedia from '../../../../../../buttons/media';
 
 export interface SingerPopularSongListItemsItemProps {
     id:number;
@@ -16,15 +17,11 @@ const SingerPopularSongListItemsItem = ({
     item:SingerPopularSongListItemsItemProps
 }) =>{
     return(
-        <View
-            style={styles().singerPopularSongListItemsItem}>
-
-            <Text>{item.isPlaying? 'PLAY  ':'PAUSE'}</Text>
-
+        <View style={styles().singerPopularSongListItemsItem}>
+            <ButtonMedia isPlaying={item.isPlaying}/>
             <View style={styles().titlePanel}>
                 <Text style={styles(item).title}>{item.title}</Text>
             </View>
-
             <Text style={styles(item).timing}>
                 {item.isPlaying ? item.remainingTime : item.totalTime}
             </Text>

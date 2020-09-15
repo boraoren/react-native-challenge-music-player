@@ -45,6 +45,7 @@ const SingerPopularSongListItems = () => {
 const styles = StyleSheet.create({
     singerPopularListItems: {
         flex: 1,
+        marginTop: 32,
     }
 })
 
