@@ -5,9 +5,7 @@ import ScreenHeaderMenu from './menu';
 const ScreenHeader = () => {
     return(
         <View>
-            <Text>
-                <ScreenHeaderMenu/>
-            </Text>
+            <ScreenHeaderMenu/>
         </View>
     )
 }
