@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import TextTitle from '../text/title';
+import MusicCard from './card';
 
 const Music = () => {
     return(
@@ -9,6 +10,7 @@ const Music = () => {
                 color={'#000'}
                 size={16}
                 value={'Music'}/>
+            <MusicCard />
         </View>
     )
 }
