@@ -38,7 +38,6 @@ const styles = (props?: ScreenHeaderProps) =>
         screenHeader: {
             flexDirection: 'row',
             justifyContent: 'space-between',
-            paddingTop: 25,
             backgroundColor: props?.backgroundColor,
         },
         withIcon: {
