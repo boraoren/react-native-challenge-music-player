@@ -1,12 +1,11 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import SongArtistImage from './artist/image';
 
 const Song = () => {
     return (
         <View>
-            <Text>
-                Song
-            </Text>
+            <SongArtistImage />
         </View>
     )
 }
