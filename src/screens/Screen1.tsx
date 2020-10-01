@@ -1,12 +1,13 @@
 import React from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import ScreenHeader from '../components/screen/header';
+import ScreenHeader, { HeaderIcon } from '../components/screen/header';
 import Singer from '../components/singer';
 
 const Screen1 = () => {
     return(
         <SafeAreaView style={styles.screen1}>
-            <ScreenHeader/>
+            <ScreenHeader
+                backgroundColor={'#E7E84E'}/>
             <Singer/>
         </SafeAreaView>
     )

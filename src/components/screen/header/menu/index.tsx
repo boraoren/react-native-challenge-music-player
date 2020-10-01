@@ -13,7 +13,6 @@ const ScreenHeaderMenu = () => {
 const styles = StyleSheet.create({
     menu: {
         paddingTop: 25,
-        backgroundColor: '#E7E84E'
     },
     menuLine: {
         fontSize: 35,
