@@ -1,16 +1,19 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import { PlayerProvider } from '../../hooks/player';
 import TextTitle from '../text/title';
 import MusicCard from './card';
 
 const Music = () => {
-    return(
+    return (
         <View style={styles.music}>
-            <TextTitle 
-                color={'#000'}
-                size={16}
-                value={'Music'}/>
-            <MusicCard />
+            <PlayerProvider>
+                <TextTitle
+                    color={'#000'}
+                    size={16}
+                    value={'Music'} />
+                <MusicCard />
+            </PlayerProvider>
         </View>
     )
 }

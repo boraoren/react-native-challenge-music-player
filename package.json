@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "i": "^0.3.6",
+    "install": "^0.13.0",
     "npm": "^6.14.8",
     "react": "16.13.1",
     "react-native": "0.63.2",
-    "react-native-soundcloud-waveform-typescript": "^1.2.7"
+    "react-native-soundcloud-waveform-typescript": "^1.2.7",
+    "react-native-swift": "^1.2.3",
+    "react-native-track-player": "^1.2.3"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

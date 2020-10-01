@@ -11,7 +11,6 @@ interface SongTrackProps {
 
 const SongTrack: React.FC<SongTrackProps> = (props) => {
 
-
     return(
         <View style={styles.track}>
             <Text style={styles.position}>
