@@ -10,8 +10,11 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "i": "^0.3.6",
+    "npm": "^6.14.8",
     "react": "16.13.1",
-    "react-native": "0.63.2"
+    "react-native": "0.63.2",
+    "react-native-soundcloud-waveform-typescript": "^1.2.7"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

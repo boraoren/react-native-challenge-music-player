@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import TextTitle from '../../../text/title';
 import SongArtistImage from './artist/image';
+import SongTrackContainer from './track';
 
 const Song = () => {
     return (
@@ -17,6 +18,9 @@ const Song = () => {
                     value={'Sunspots'}
                     size={16}/>
             </View>
+
+            <SongTrackContainer/>
+
         </View>
     )
 }
