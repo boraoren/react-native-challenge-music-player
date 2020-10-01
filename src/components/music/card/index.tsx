@@ -1,12 +1,11 @@
 import React from 'react';
 import { Text, View } from 'react-native';
+import Song from './song';
 
 const MusicCard = () => {
     return(
         <View>
-            <Text>
-                Music Card
-            </Text>
+            <Song/>
         </View>
     )
 }
