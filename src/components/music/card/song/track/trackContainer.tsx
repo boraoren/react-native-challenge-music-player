@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import SongTrack from './track';
 import TrackPlayer, { useTrackPlayerProgress } from 'react-native-track-player';
-import { PlayerActionType, 
-    usePlayerDispatchContext, 
-    usePlayerStateContext } from '../../../../../hooks/player';
+import {
+    PlayerActionType,
+    usePlayerDispatchContext,
+    usePlayerStateContext
+} from '../../../../../hooks/player';
 import { Button, Text } from 'react-native';
 
 
@@ -45,34 +47,15 @@ const SongTrackContainer = () => {
     }
 
     const setTrackTime = async (value: number) => {
-        await TrackPlayer.seekTo( (duration / 100) * value);
-        await dispatch( {type: PlayerActionType.Play});
+        await TrackPlayer.seekTo((duration / 100) * value);
+        await dispatch({ type: PlayerActionType.Play });
     }
 
     return (
-        <>
-            <SongTrack
-                position={position}
-                duration={duration}
-                setTime={setTrackTime} />
-            <Button
-                onPress={() => {
-                    dispatch({ type: PlayerActionType.Play })
-                }}
-                title={'TEST PLAY'}
-            />
-            
-            <Button 
-                onPress={() => {
-                    dispatch({ type: PlayerActionType.Pause })
-                }}
-                title={'TEST PAUSE'}
-            />
-
-            <Text style={{ color: '#FFF' }}>
-                {`IS PLAYING : ${state.isPlaying}`}
-            </Text>
-        </>
+        <SongTrack
+            position={position}
+            duration={duration}
+            setTime={setTrackTime} />
     )
 }
 
