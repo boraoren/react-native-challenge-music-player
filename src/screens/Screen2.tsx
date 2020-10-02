@@ -1,5 +1,6 @@
 import React from 'react';
 import { SafeAreaView, Text, View } from 'react-native';
+import BottomBar from '../components/bottom/bar';
 import Music from '../components/music';
 import ScreenHeader, { HeaderIcon } from '../components/screen/header';
 
@@ -9,7 +10,8 @@ const Screen2 = () => {
             <ScreenHeader 
                 backgroundColor={'white'}
                 withIcon={HeaderIcon.HEARTH}/>
-            <Music/>    
+            <Music/>  
+            <BottomBar/>  
         </SafeAreaView>
     )
 }
